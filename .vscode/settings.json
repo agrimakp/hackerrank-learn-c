@@ -1,0 +1,15 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.o && $dir$fileNameWithoutExt.o",
+      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.o && $dir$fileNameWithoutExt.o"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/*.o": true
+    }
+}
