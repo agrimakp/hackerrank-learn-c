@@ -3,15 +3,31 @@
 int max_of_four(int a,int b,int c,int  d) {
     if(a>b){
         if(a>c){
-            return a;
+            if(a>d){
+                return a;
+            } else {
+                return d;
+            }
         } else {
-            return c;
+            if(c>d){
+                return c;
+            }  else {
+                return d;
+            }
         }
     } else {
         if(b>c){
-            return b;
+            if(b>d){
+                return b;
+            } else {
+                return d;
+            }
         } else {
-            return c;
+            if(c>d){
+                return c;
+            } else  {
+                return d;
+            }
         }
     }
 }
