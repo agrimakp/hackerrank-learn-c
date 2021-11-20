@@ -4,15 +4,15 @@
 #include <stdlib.h>
 
 int main() {
-    int limit,i,j;
-    int  arr[10], sum=0;  
+    int limit;
     scanf("%d", &limit);
+    int  arr[limit], sum=0;  
     
-    for  (i=0; i<limit; i++) {
+    for  (int i=0; i<limit; i++) {
        scanf("%d", &arr[i]);
     }
     
-    for  (j=0; j<limit; j++) {
+    for  (int j=0; j<limit; j++) {
        sum += arr[j];
     }  
      printf("%d", sum);
